@@ -5,7 +5,6 @@ export const Section = styled.div`
     flex-direction: column;
     height: ${props=>props.fullHeight ? "80vh" : 'auto'};
     max-width: 1040px;
-    margin: 0 auto;
     margin-top: 5%;
 `;
 
