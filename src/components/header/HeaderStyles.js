@@ -1,19 +1,28 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    display: grid;
+    background-color: ${props => props.theme.colors.backgroundheader};
+    display: flex;
+    justify-content: center;
+    width: 100%;
     position: sticky;
+    top: 0px;
+`;
+
+export const Nav = styled.div`
+    display: grid;
     align-items: center;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
+    width: 1280px;
 `;
 
 export const HomeButton = styled.a`
     display: flex;
     align-content: center;
     grid-area: 1 / 1 / 1 / 2;
-    padding: 1rem;
+    padding: 0.5rem;
     gap: 1rem;
     &:hover {
         cursor: pointer;

@@ -13,6 +13,7 @@ const theme = {
     accent: "#06fdd8",
     button: "hsl(205.1,100%,36.1%)",
     background2: "#353535",
+    backgroundheader: "rgba(37, 37, 37, 0.5)"
   },
   breakpoints: {
     sm: 'screen and (max-width: 640px)',

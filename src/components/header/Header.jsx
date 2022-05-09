@@ -1,10 +1,11 @@
-import { HomeButton, Container, NavLinks, NavLink, Socials, SocialIcon } from './HeaderStyles';
+import { HomeButton, Container, NavLinks, Nav, NavLink, Socials, SocialIcon } from './HeaderStyles';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { FaCat } from 'react-icons/fa';
 
 
 const Header = () => (
     <Container>
+        <Nav>
         <HomeButton><FaCat/><span>Sean Ng</span></HomeButton>
         <NavLinks>
             <NavLink href="#about">About</NavLink>
@@ -21,6 +22,7 @@ const Header = () => (
                 <AiFillLinkedin size="3rem"/>
             </SocialIcon>
         </Socials>
+        </Nav>
     </Container>
 )
 

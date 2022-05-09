@@ -9,32 +9,37 @@ import Hero from './components/hero/Hero';
 import Animation from './components/hero/Animation';
 
 const Container = styled.div`
-  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  margin: auto;
-  margin-left: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+  background-color: ${props => props.theme.colors.background};
 `;
 
 const HeroContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+
 `;
 
 function App() {
   return (
     <Theme>
+    <Header/>
     <Container>
-        <Header/>
-        <main>
-        <About/>
-        <HeroContainer>
+      <main>
+      <HeroContainer>
         <Hero/>
         <Animation/>
-        </HeroContainer>
-        <Projects/>
-        <Competencies/>
-        <Experience/>
-        </main>
+      </HeroContainer>
+      <About/>
+      <Projects/>
+      <Competencies/>
+      <Experience/>
+      </main>
     </Container>
     </Theme>
   );
