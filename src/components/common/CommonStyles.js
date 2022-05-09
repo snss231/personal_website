@@ -4,6 +4,7 @@ export const Section = styled.div`
     display: flex;
     flex-direction: column;
     height: ${props=>props.fullHeight ? '100vh' : 'auto'};
+    justify-content: center;
     max-width: 1040px;
     margin-bottom: 10rem;
 `;
@@ -12,7 +13,7 @@ export const SectionTitle = styled.h2`
     width: max-content;
     font-size: 56px;
     color: rgb(255, 255, 255);
-    margin-bottom:16px
+    margin-bottom: 5rem;
 `;
 
 export const SectionText = styled.p`
