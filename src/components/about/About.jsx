@@ -17,8 +17,9 @@ const AboutText = styled.div`
 `;
 
 const AboutP = styled.p`
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-size: 18px;
+    line-height: 2.3rem;
 `;
 
 const Accent = styled.span`
@@ -37,14 +38,14 @@ const About = () => (
                 </AboutP>
                 <AboutP>
                     Since I was a child, I've always been interested in all things tech. 
-                    After discovering my love for programming through an introductory CS course, I've never looked back.
+                    After discovering my love for programming through a free online introductory CS course (CS50 🙏 ), I've never looked back.
                     There isn't much here yet, but stay tuned.. 😏
                 </AboutP>
                 <AboutP>
                     My tech interests are <Accent>full-stack software development</Accent>, <Accent>cybersecurity</Accent> and <Accent>computer networks</Accent>.
                 </AboutP>
                 <AboutP>
-                    My personal interests are listening to and performing music, sitcoms/dramas and travelling 🇯🇵
+                    My personal interests are listening to and performing music, sitcoms/dramas and travelling 🇯🇵 .
                 </AboutP>
             </AboutText>
             <MyPhoto src="assets/me.png"/>
