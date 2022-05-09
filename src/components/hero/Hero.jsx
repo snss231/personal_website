@@ -1,7 +1,7 @@
 import { Section, SectionTitle, SectionText } from "../common/CommonStyles";
 
 const Hero = () => (
-    <Section>
+    <Section fullHeight>
         <SectionTitle>
             Hi!<br/>I'm Sean.
         </SectionTitle>

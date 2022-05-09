@@ -1,14 +1,17 @@
 import { HomeButton, Container, NavLinks, NavLink, Socials, SocialIcon } from './HeaderStyles';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import { FaPoop } from 'react-icons/fa';
+import { FaCat } from 'react-icons/fa';
+
 
 const Header = () => (
     <Container>
-        <HomeButton><FaPoop/><span>Sean Ng</span></HomeButton>
+        <HomeButton><FaCat/><span>Sean Ng</span></HomeButton>
         <NavLinks>
-            <NavLink>About</NavLink>
-            <NavLink>Projects</NavLink>
-            <NavLink>Experience</NavLink>
+            <NavLink href="#about">About</NavLink>
+            <NavLink href="#projects">Projects</NavLink>
+            <NavLink href="#experience">Experience</NavLink>
+            <NavLink href="#experience">Skills</NavLink>
+            <NavLink href="#experience">Contact</NavLink>
         </NavLinks>
         <Socials>
             <SocialIcon href="https://github.com/snss231">

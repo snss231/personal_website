@@ -1,21 +1,19 @@
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 
-const theme = { //copied from adrianhajdin
-  // Temp fonts
+const theme = {
   fonts: {
     title: "Space Grotesk, sans-serif",
     main: "Space Grotesk, sans-serif"
   },
-  // Colors for layout
   colors: {
-    primary1: "hsl(204,23.8%,95.9%)",
-    background1: "#0F1624",
-    accent1: "hsl(34.9,98.6%,72.9%)",
+    primary: "hsl(204,23.8%,95.9%)",
+    primary2: "rgba(255, 255, 255, 0.6);",
+    background: "#292929",
+    accent: "#06fdd8",
     button: "hsl(205.1,100%,36.1%)",
-    background2: "hsl(232.7,27.3%,23.7%)",
+    background2: "#353535",
   },
-  // Breakpoints for responsive design
   breakpoints: {
     sm: 'screen and (max-width: 640px)',
     md: 'screen and (max-width: 768px)',
@@ -38,8 +36,8 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: ${props => props.theme.fonts.main};
     font-size: 1.6rem;
-    background: ${props => props.theme.colors.background1};
-    color: ${props => props.theme.colors.primary1};
+    background: ${props => props.theme.colors.background};
+    color: ${props => props.theme.colors.primary};
     cursor: default;
   }
   h1,h2,h3,h4,h5,h6,button {
@@ -47,9 +45,6 @@ const GlobalStyles = createGlobalStyle`
   }
   a {
     text-decoration: none;
-  }
-  li{
-    list-style: none;
   }
 `;
 
