@@ -5,8 +5,8 @@ import Logo from '../common/Logo'
 
 const Projects = () => (
     <>
-    <SectionDivider/>
-    <Section id="projects">
+    <SectionDivider id="projects"/>
+    <Section>
         <SectionTitle>Projects</SectionTitle>
         <ProjectCase>
             {projects.map(({title, description, image, stack, links}) => (

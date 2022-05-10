@@ -16,7 +16,7 @@ const competencies = [
 
 const Competencies = () => (
     <>
-    <SectionDivider/>
+    <SectionDivider id="competencies"/>
     <Section>
         <SectionTitle>Competencies</SectionTitle>
         <Container>

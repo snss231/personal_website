@@ -5,7 +5,7 @@ import experience from '../../data/experience';
 const Experience = () => (
     <>
     <SectionDivider/>
-    <Section>
+    <Section id="experience">
         <SectionTitle>Experience</SectionTitle>
         {experience.map(e => (
             <Container>

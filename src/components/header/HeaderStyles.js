@@ -13,30 +13,38 @@ export const Nav = styled.div`
     display: grid;
     align-items: center;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "home nav nav blank socials";
     grid-column-gap: 1rem;
     padding: 1.5rem;
     width: 1280px;
+    @media ${(props) => props.theme.breakpoints.sm} {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "nav nav blank socials";
+    }
 `;
 
 export const HomeButton = styled.a`
     display: flex;
     align-content: center;
-    grid-area: 1 / 1 / 1 / 2;
+    grid-area: home;
     padding: 0.5rem;
     gap: 1rem;
     &:hover {
         cursor: pointer;
-    };
+    }
+    @media ${(props) => props.theme.breakpoints.sm} {
+        visibility: hidden;
+    }
 `;
 
 export const NavLinks = styled.div`
     display: flex;
     justify-content: space-around;
-    grid-area: 1 / 2 / 1 / 4;
+    grid-area: nav;
 `;
 
 export const NavLink = styled.a`
-    font-size: 2rem;
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.75);
     &:hover {
         color: rgba(255, 255, 255, 1);
@@ -49,7 +57,7 @@ export const Socials = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    grid-area: 1 / 5 / 1 / 5;
+    grid-area: socials;
 `;
 
 export const SocialIcon = styled.a`
@@ -59,6 +67,6 @@ export const SocialIcon = styled.a`
         background-color: #212d45;
         transform: scale(1.2);
         cursor: pointer;
-    };
+    }
     transition: 0.3s;
 `;

@@ -28,7 +28,7 @@ const Accent = styled.span`
 
 const About = () => (
     <>
-    <SectionDivider/>
+    <SectionDivider id="about"/>
     <Section>
         <SectionTitle>About me</SectionTitle>
         <AboutContainer>
