@@ -6,7 +6,6 @@ import Experience from './components/experience/Experience';
 import Theme from './styles/Theme';
 import styled from 'styled-components'
 import Hero from './components/hero/Hero';
-import Animation from './components/hero/Animation';
 
 const Container = styled.div`
   display: flex;
@@ -18,22 +17,13 @@ const Container = styled.div`
   background-color: ${props => props.theme.colors.background};
 `;
 
-const HeroContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-`;
-
 function App() {
   return (
     <Theme>
     <Header/>
     <Container>
       <main>
-      <HeroContainer>
-        <Hero/>
-        <Animation/>
-      </HeroContainer>
+      <Hero/>
       <About/>
       <Projects/>
       <Competencies/>

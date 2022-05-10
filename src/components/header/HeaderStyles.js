@@ -6,6 +6,7 @@ export const Container = styled.div`
     justify-content: center;
     width: 100%;
     position: sticky;
+    height:100%
     top: 0px;
 `;
 
@@ -17,9 +18,12 @@ export const Nav = styled.div`
     grid-column-gap: 1rem;
     padding: 1.5rem;
     width: 1280px;
+    @media ${(props) => props.theme.breakpoints.md} {
+        grid-template-areas: "home nav nav nav socials"
+    }
     @media ${(props) => props.theme.breakpoints.sm} {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: "nav nav blank socials";
+        grid-template-areas: "nav nav nav socials"
     }
 `;
 
@@ -33,7 +37,7 @@ export const HomeButton = styled.a`
         cursor: pointer;
     }
     @media ${(props) => props.theme.breakpoints.sm} {
-        visibility: hidden;
+        display: none;
     }
 `;
 

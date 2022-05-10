@@ -46,6 +46,18 @@ const logos = {
     "telegram": {
         name: "Telegram Bot API",
         src: "https://img.icons8.com/color/344/telegram-app--v1.png"
+    },
+    "devpost": {
+        name: "Devpost",
+        src: "/assets/devpost.svg"
+    },
+    "youtube": {
+        name: "Youtube",
+        src: "https://img.icons8.com/color/344/youtube-play.png"
+    },
+    "github": {
+        name: "GitHub",
+        src: "https://img.icons8.com/material-outlined/344/github.png"
     }
 };
 

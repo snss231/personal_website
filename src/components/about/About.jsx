@@ -10,6 +10,14 @@ const MyPhoto = styled.img`
 const AboutContainer = styled.div`
     display: grid;
     grid-template-areas: "photo text";
+    @media ${(props) => props.theme.breakpoints.sm} {
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "photo"
+        "text";
+        justify-items: center;
+        align-items: center;
+    }
 `;
 
 const AboutText = styled.div`

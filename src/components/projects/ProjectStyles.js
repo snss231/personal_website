@@ -47,6 +47,7 @@ export const ProjectStack = styled.div`
 export const ProjectLinks = styled.div`
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 `;
 
 export const ProjectLink = styled.a`

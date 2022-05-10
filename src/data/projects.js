@@ -6,7 +6,7 @@ const projects = [
         stack: ['react', 'rails', 'mui'],
         links: [
             {
-                name: 'Github',
+                name: 'github',
                 link: "https://github.com/snss231/todolister"
             }
         ]
@@ -18,15 +18,15 @@ const projects = [
         stack: ['python', 'googlemaps', 'telegram'],
         links: [
             {
-                name: 'Github',
+                name: 'github',
                 link: "https://github.com/junwei26/makanwhere"
             },
             {
-                name: 'Devpost',
+                name: 'devpost',
                 link: "https://devpost.com/software/makanwhere"
             },
             {
-                name:'Youtube',
+                name:'youtube',
                 link: "https://www.youtube.com/watch?v=njHUXMuEVxk"
             }
         ]

@@ -21,7 +21,7 @@ const Projects = () => (
                         {stack.map(s => (<Logo name={s} size={4}/>))}
                     </ProjectStack>
                     <ProjectLinks>
-                        {links.map(l => <ProjectLink href={l.link}>{l.name}</ProjectLink>)}
+                        {links.map(l => (<a href={l.link}><Logo name={l.name} size={4}/></a>))}
                     </ProjectLinks>
                     <Img src={image}/>
                 </ProjectContainer>    
