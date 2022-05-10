@@ -58,6 +58,10 @@ const logos = {
     "github": {
         name: "GitHub",
         src: "https://img.icons8.com/material-outlined/344/github.png"
+    },
+    "heroku": {
+        name: "Heroku",
+        src: "https://img.icons8.com/color/344/heroku.png"
     }
 };
 

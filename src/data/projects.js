@@ -3,7 +3,7 @@ const projects = [
         title: 'Todolister',
         description: "Get organised with this full-stack task management Web app, built in React and Ruby on Rails.",
         image: "/assets/todolister.png",
-        stack: ['react', 'rails', 'mui'],
+        stack: ['react', 'rails', 'mui', 'heroku'],
         links: [
             {
                 name: 'github',
